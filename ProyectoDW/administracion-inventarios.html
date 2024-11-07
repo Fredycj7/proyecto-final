@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Inventarios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de Inventarios</h1>
+    </header>
+    <main>
+        <section class="formulario-inventario">
+            <h2>Agregar Producto</h2>
+            <form id="addProductForm">
+                <input type="text" id="productName" placeholder="Nombre del Producto" required>
+                <input type="number" id="productQuantity" placeholder="Cantidad" required>
+                <input type="text" id="productPrice" placeholder="Precio" required>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+        
+        <section class="tabla-inventario">
+            <h2>Lista de Productos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre del Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarían los productos dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

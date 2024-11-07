@@ -1,0 +1,940 @@
+{
+	"info": {
+		"_postman_id": "da377c6b-5575-45b1-bc8b-efaa39908173",
+		"name": "Full CRUD Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6623389"
+	},
+	"item": [
+		{
+			"name": "Sede",
+			"item": [
+				{
+					"name": "Crear Sede",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"NombreSede\": \"Central\",\n  \"Ubicacion\": \"Guatemala\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/sede",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"sede"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Sede",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"NombreSede\": \"Central\",\n  \"Ubicacion\": \"Guatemala 2\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/sede/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"sede",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Todos Sede",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/sede",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"sede"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Sede Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/sede/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"sede",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empleados",
+			"item": [
+				{
+					"name": "Obtener Todos Empleado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/empleado",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"empleado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Empleado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Nombre\": \"Mario Gonga\",\n  \"Cargo\": \"Jefe\",\n  \"SedeID\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/empleado",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"empleado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Empleado",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Nombre\": \"Mario Una\",\n  \"Cargo\": \"Jefe\",\n  \"SedeID\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/empleado/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"empleado",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Empleado Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/empleado/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"empleado",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OficinasAdministrativas",
+			"item": [
+				{
+					"name": "Obtener Todos OficinaAdministrativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/oficinaadministrativa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"oficinaadministrativa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear OficinaAdministrativa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Ubicacion\":\"UMG\",\n    \"Alquilada\":true,\n    \"SedeID\":1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/oficinaadministrativa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"oficinaadministrativa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar OficinaAdministrativa",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Ubicacion\":\"UMG\",\n    \"Alquilada\":false,\n    \"SedeID\":1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/oficinaadministrativa/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"oficinaadministrativa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener OficinaAdministrativa Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/oficinaadministrativa/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"oficinaadministrativa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GiroNegocio",
+			"item": [
+				{
+					"name": "Obtener Todos GiroNegocio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/gironegocio",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gironegocio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear GiroNegocio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"NombreGiro\": \"Carros\",\n  \"Descripcion\":\"SuperVenta\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/gironegocio",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gironegocio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar GiroNegocio",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"NombreGiro\": \"Carros\",\n  \"Descripcion\":\"SuperVenta2\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/gironegocio/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gironegocio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener GiroNegocio Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/gironegocio/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gironegocio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gastos",
+			"item": [
+				{
+					"name": "Obtener Todos Gasto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/gasto",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gasto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Gasto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"GiroID\": 1,\n  \"Descripcion\": \"Gasto de importacion\",\n  \"Monto\": 1000,\n  \"Fecha\": \"2023-01-01T10:30:00Z\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/gasto",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gasto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Gasto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"GiroID\": 1,\n  \"Descripcion\": \"Gasto de importacion2\",\n  \"Monto\": 1000,\n  \"Fecha\": \"2023-01-01T10:30:00Z\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/gasto/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gasto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Gasto Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/gasto/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gasto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prespuestos",
+			"item": [
+				{
+					"name": "Obtener Todos Presupuesto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/presupuesto",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"presupuesto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Presupuesto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"GiroID\": 1,\n  \"Monto\": 1000,\n  \"FechaInicio\": \"2023-01-01T10:30:00Z\",\n  \"FechaFin\": \"2023-01-01T10:30:00Z\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/presupuesto",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"presupuesto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Presupuesto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"GiroID\": 1,\n  \"Monto\": 2000,\n  \"FechaInicio\": \"2023-01-01T10:30:00Z\",\n  \"FechaFin\": \"2023-01-01T10:30:00Z\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/presupuesto/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"presupuesto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Presupuesto Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/presupuesto/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"presupuesto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ServiciosConstruccion",
+			"item": [
+				{
+					"name": "Obtener Todos ServicioConstruccion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/servicioconstruccion",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"servicioconstruccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear ServicioConstruccion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Descripcion\": \"Servicio de construcción de puente\",\n  \"Ubicacion\": \"Ciudad de Guatemala\",\n  \"FechaInicio\": \"2023-01-01T00:00:00Z\",\n  \"FechaFin\": \"2023-12-31T23:59:59Z\",\n  \"GiroID\": 1\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/servicioconstruccion",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"servicioconstruccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar ServicioConstruccion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Descripcion\": \"Servicio de construcción de puente2\",\n  \"Ubicacion\": \"Ciudad de Guatemala\",\n  \"FechaInicio\": \"2023-01-01T00:00:00Z\",\n  \"FechaFin\": \"2023-12-31T23:59:59Z\",\n  \"GiroID\": 1\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/servicioconstruccion/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"servicioconstruccion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener ServicioConstruccion Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/servicioconstruccion/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"servicioconstruccion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MaquinariaCamiones",
+			"item": [
+				{
+					"name": "Obtener Todos MaquinariaCamion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/maquinariacamion",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"maquinariacamion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear MaquinariaCamion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Tipo\": \"Camión de carga\",\n  \"Marca\": \"Mercedes-Benz\",\n  \"Modelo\": \"Actros 2545\",\n  \"Año\": 2022,\n  \"GPSID\": 101\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/maquinariacamion",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"maquinariacamion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar MaquinariaCamion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Tipo\": \"Camión de carga2\",\n  \"Marca\": \"Mercedes-Benz\",\n  \"Modelo\": \"Actros 2545\",\n  \"Año\": 2022,\n  \"GPSID\": 101\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/maquinariacamion/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"maquinariacamion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener MaquinariaCamion Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/maquinariacamion/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"maquinariacamion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transporte",
+			"item": [
+				{
+					"name": "Obtener Todos Transporte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transporte",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Transporte",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Empresa\": \"Transportes Internacionales S.A.\",\n  \"Origen\": \"Ciudad de México\",\n  \"Destino\": \"Ciudad de Guatemala\",\n  \"Fecha\": \"2023-07-15T08:00:00Z\",\n  \"MaquinariaID\": 1\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/transporte",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Transporte",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Empresa\": \"Transportes Internacionales S.A.2\",\n  \"Origen\": \"Ciudad de México\",\n  \"Destino\": \"Ciudad de Guatemala\",\n  \"Fecha\": \"2023-07-15T08:00:00Z\",\n  \"MaquinariaID\": 1\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/transporte/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transporte",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Transporte Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transporte/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transporte",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Monitor GPS",
+			"item": [
+				{
+					"name": "Obtener Todos MonitoreoGps",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/monitoreogps",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"monitoreogps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear MonitoreoGps",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"MaquinariaID\": 1,\n  \"FechaHora\": \"2023-07-15T08:30:00Z\",\n  \"Latitud\": 14.634915,\n  \"Longitud\": -90.506882,\n  \"Velocidad\": 65.5,\n  \"TiempoUso\": 120\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/monitoreogps",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"monitoreogps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar MonitoreoGps",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"MaquinariaID\": 1,\n  \"FechaHora\": \"2023-07-15T08:30:00Z\",\n  \"Latitud\": 14.634915,\n  \"Longitud\": 90.506882,\n  \"Velocidad\": 65.5,\n  \"TiempoUso\": 120\n}\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/monitoreogps/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"monitoreogps",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener MonitoreoGps Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/monitoreogps/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"monitoreogps",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

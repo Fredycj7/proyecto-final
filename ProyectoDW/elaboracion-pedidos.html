@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaboración de Pedidos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elaboración de Pedidos</h1>
+    </header>
+    <main>
+        <section class="formulario">
+            <h2>Agregar Nuevo Pedido</h2>
+            <form id="orderForm">
+                <input type="text" id="orderId" placeholder="ID del Pedido" required>
+                <input type="text" id="product" placeholder="Producto" required>
+                <input type="number" id="quantity" placeholder="Cantidad" required min="1">
+                <input type="date" id="orderDate" placeholder="Fecha del Pedido" required>
+                <button type="submit">Agregar Pedido</button>
+            </form>
+        </section>
+        
+        <section class="tabla-pedidos">
+            <h2>Lista de Pedidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID del Pedido</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Fecha del Pedido</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarían los pedidos dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+// Variables
+$primary-color: #4CAF50; // Color verde
+$hover-color: #FFD700; // Color dorado
+$background-color: #f0f0f0;
+$text-color: #333;
+$font-family: 'Arial', sans-serif;
+
+// Estilos Globales
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+// Estilos de formularios
+$form-background: white;
+$form-padding: 15px;
+$form-border-radius: 5px;
+$form-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+.formulario, .formulario-inventario, .busqueda {
+    background: $form-background;
+    padding: $form-padding;
+    border-radius: $form-border-radius;
+    margin-bottom: 20px;
+    box-shadow: $form-box-shadow;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+// Estilos de tablas
+.table-container {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: $primary-color;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; // Efecto hover en filas
+        }
+    }
+
+    .acciones {
+        display: flex;
+        justify-content: space-around;
+
+        button {
+            background-color: $hover-color;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($hover-color, 10%);
+            }
+        }
+    }
+}
+
+// Secciones específicas
+main {
+    padding: 20px;
+
+    .login-form {
+        @extend .formulario;
+    }
+
+    .tabla-usuarios,
+    .tabla-pedidos,
+    .tabla-inventario {
+        @extend .table-container;
+    }
+}
+
+// Secciones específicas con formularios y tablas
+.main-section {
+    padding: 20px;
+
+    .formulario {
+        @extend .formulario;
+    }
+
+    .tabla {
+        @extend .table-container;
+    }
+}

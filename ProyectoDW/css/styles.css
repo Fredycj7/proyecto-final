@@ -1,0 +1,553 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  width: 300px;
+  margin: auto;
+}
+main .login-form {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+main .login-form form {
+  display: flex;
+  flex-direction: column;
+}
+main .login-form form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .login-form form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+main .login-form form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .login-form form button:hover {
+  background-color: #FFD700;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #FFD700;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+}
+main .formulario {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .formulario h2 {
+  margin-bottom: 15px;
+}
+main .formulario form {
+  display: flex;
+  flex-direction: column;
+}
+main .formulario form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .formulario form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+main .formulario form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .formulario form button:hover {
+  background-color: #FFD700;
+}
+main .tabla-usuarios {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .tabla-usuarios h2 {
+  margin: 15px;
+}
+main .tabla-usuarios table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .tabla-usuarios table th, main .tabla-usuarios table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+main .tabla-usuarios table th {
+  background-color: #4CAF50;
+  color: white;
+}
+main .tabla-usuarios table tr:hover {
+  background-color: #f1f1f1;
+}
+main .tabla-usuarios table .acciones button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .tabla-usuarios table .acciones button.editar {
+  background-color: #2196F3;
+  color: white;
+}
+main .tabla-usuarios table .acciones button.eliminar {
+  background-color: #F44336;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+}
+main .formulario {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .formulario h2 {
+  margin-bottom: 15px;
+}
+main .formulario form {
+  display: flex;
+  flex-direction: column;
+}
+main .formulario form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .formulario form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+main .formulario form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .formulario form button:hover {
+  background-color: #FFD700;
+}
+main .tabla-pedidos {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .tabla-pedidos h2 {
+  margin: 15px;
+}
+main .tabla-pedidos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .tabla-pedidos table th, main .tabla-pedidos table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+main .tabla-pedidos table th {
+  background-color: #4CAF50;
+  color: white;
+}
+main .tabla-pedidos table tr:hover {
+  background-color: #f1f1f1;
+}
+main .tabla-pedidos table .acciones button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .tabla-pedidos table .acciones button.editar {
+  background-color: #2196F3;
+  color: white;
+}
+main .tabla-pedidos table .acciones button.eliminar {
+  background-color: #F44336;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+}
+main .busqueda {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+main .busqueda h2 {
+  margin-bottom: 15px;
+}
+main .busqueda form {
+  display: flex;
+  justify-content: center;
+}
+main .busqueda form input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .busqueda form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+main .busqueda form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .busqueda form button:hover {
+  background-color: #FFD700;
+}
+main .tabla-pedidos {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .tabla-pedidos h2 {
+  margin: 15px;
+}
+main .tabla-pedidos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .tabla-pedidos table th, main .tabla-pedidos table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+main .tabla-pedidos table th {
+  background-color: #4CAF50;
+  color: white;
+}
+main .tabla-pedidos table tr:hover {
+  background-color: #f1f1f1;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+}
+main .formulario-inventario {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+main .formulario-inventario h2 {
+  margin-bottom: 15px;
+}
+main .formulario-inventario form {
+  display: flex;
+  flex-direction: column;
+}
+main .formulario-inventario form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .formulario-inventario form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+main .formulario-inventario form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .formulario-inventario form button:hover {
+  background-color: #FFD700;
+}
+main .tabla-inventario {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .tabla-inventario h2 {
+  margin: 15px;
+}
+main .tabla-inventario table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .tabla-inventario table th, main .tabla-inventario table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+main .tabla-inventario table th {
+  background-color: #4CAF50;
+  color: white;
+}
+main .tabla-inventario table tr:hover {
+  background-color: #f1f1f1;
+}
+main .tabla-inventario table .acciones {
+  display: flex;
+  justify-content: space-around;
+}
+main .tabla-inventario table .acciones button {
+  background-color: #FFD700;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .tabla-inventario table .acciones button:hover {
+  background-color: #ccac00;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
